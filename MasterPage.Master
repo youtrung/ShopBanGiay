@@ -1,0 +1,65 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="ShopGiay.MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link rel="stylesheet" href="masterpage.css" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+</head>
+<body>
+    <form id="form1" runat="server">
+       <div class="header">
+           <div class="header_div">
+               <div class="header_logo">
+                   Shop Giày
+               </div>
+               <div class="header_menu">
+                   <ul>
+                       <li><a href="HOME.aspx">Trang chủ</a></li>
+                       <li><a href="HOME.aspx">Về chúng tôi </a></li>
+                       <li><a href="LoginForm.aspx">Đăng Nhập</a></li>
+                       <li><a href="CreateForm.aspx">Đăng Ký</a></li>
+                       <li><a href="HOME.aspx">Giỏ hàng</a></li>
+                   </ul>
+               </div>
+           </div>
+       </div>
+   
+        <input type="checkbox" id="check">
+        <label for="check">
+      <i class="fas fa-bars" id="btn"></i>
+      <i class="fas fa-times" id="cancel"></i>
+    </label>
+        <div class="sidebar">
+            <header>My Shop</header>
+                <ul>
+                <li>
+                   <a href="Page01.aspx?id=DM01"><i class="fas fa-stream"></i>NIKE</a>
+
+                </li>
+                <li><a href="Page02.aspx?id=DM02"><i class="fas fa-stream"></i>Lactoses</a></li>
+                <li><a href="Page03.aspx?id=DM03"><i class="fas fa-stream"></i>Phụ Kiện</a></li>
+                <li><a href="#"><i class="fas fa-question-circle"></i>Question?</a></li>
+                <li><a href="#"><i class="fas fa-envelope"></i>Liên hệ</a></li>
+            </ul>
+        </div>
+            <div>
+           <section>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+           </section>
+            </div>
+             <footer>
+            <p>Thông tin liên hệ : 090999333xxx </p>
+            <p>Email: trungvm99email@gmail.com</p>
+            <p>Nhóm thực hành :5 </p>
+           </footer>
+    </form>
+</body>
+</html>

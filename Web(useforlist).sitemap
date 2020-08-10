@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+	<siteMapNode url="~/HOME.aspx" title="DỊCH VỤ KHÁCH HÀNG  "  description="">
+		<siteMapNode url="~/HOME.aspx" title=" Thông tin liên hệ "  description="" />
+		<siteMapNode url="~/HOME.aspx" title=" Câu hỏi thường gặp "  description="" />
+		<siteMapNode url="~/HOME.aspx" title=" Gửi phản hồi "  description="" />
+	</siteMapNode>
+</siteMap>

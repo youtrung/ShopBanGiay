@@ -1,0 +1,261 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E9A92238-9D98-4265-98F0-DDDAD845A4F0}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ShopGiay</RootNamespace>
+    <AssemblyName>ShopGiay</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44340</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="backgroundsneaker.jpg" />
+    <Content Include="bannerden.jpg" />
+    <Content Include="bannernew.jpg" />
+    <Content Include="bg.jpg" />
+    <Content Include="Chitiet.aspx" />
+    <Content Include="coixe\cx1.jpg" />
+    <Content Include="coixe\cx2.jpg" />
+    <Content Include="coixe\cx3.jpg" />
+    <Content Include="coixe\cx4.jpg" />
+    <Content Include="CreateForm.aspx" />
+    <Content Include="dexoay\dx1.jpg" />
+    <Content Include="dexoay\dx2.jpg" />
+    <Content Include="dexoay\dx3.jpg" />
+    <Content Include="dexoay\dx4.jpg" />
+    <Content Include="giay\lac1.jpg" />
+    <Content Include="giay\lac2.jpg" />
+    <Content Include="giay\lac2_1.jpg" />
+    <Content Include="giay\lac2_2.jpg" />
+    <Content Include="giay\lac3.jpg" />
+    <Content Include="giay\lac3_1.jpg" />
+    <Content Include="giay\lac3_2.jpg" />
+    <Content Include="giay\lac4.jpg" />
+    <Content Include="giay\lac4_1.jpg" />
+    <Content Include="giay\lac4_2.jpg" />
+    <Content Include="giay\lac5.jpg" />
+    <Content Include="giay\lac5_1.jpg" />
+    <Content Include="giay\lac5_2.jpg" />
+    <Content Include="giay\lacct2.jpg" />
+    <Content Include="giay\lacct3.jpg" />
+    <Content Include="HOME.aspx" />
+    <Content Include="login.css" />
+    <Content Include="login1.css" />
+    <Content Include="LoginForm.aspx" />
+    <Content Include="login\pic1.png" />
+    <Content Include="masterpage.css" />
+    <Content Include="mockhoa\ctmk1.jpg" />
+    <Content Include="mockhoa\ctmk2.jpg" />
+    <Content Include="mockhoa\ctmk3.jpg" />
+    <Content Include="mockhoa\mk1.jpg" />
+    <Content Include="mockhoa\mk2.jpg" />
+    <Content Include="mockhoa\mk3.jpg" />
+    <Content Include="mockhoa\mk4.jpg" />
+    <Content Include="Nike\BlueHero.jpg" />
+    <Content Include="Nike\BlueNavy.jpg" />
+    <Content Include="Nike\BQ3202-001-01-300x300.jpg" />
+    <Content Include="Nike\nike1_1.jpg" />
+    <Content Include="Nike\Nike1_2.jpg" />
+    <Content Include="Nike\nike2_1.jpg" />
+    <Content Include="Nike\nike2_2.jpg" />
+    <Content Include="Nike\nike3.jpg" />
+    <Content Include="Nike\nike3_1.jpg" />
+    <Content Include="Nike\nike3_2.jpg" />
+    <Content Include="Nike\nike4.jpg" />
+    <Content Include="Nike\nike4_1.jpg" />
+    <Content Include="Nike\nike4_2.jpg" />
+    <Content Include="Nike\nike5.jpg" />
+    <Content Include="Nike\nike6.jpg" />
+    <Content Include="Nike\nike5_1.jpg" />
+    <Content Include="Nike\nike5_2.jpg" />
+    <Content Include="Nike\nike6_1.jpg" />
+    <Content Include="Nike\nike6_2.jpg" />
+    <Content Include="Nike\NikeEpicReactFlynit2 Wjpg.jpg" />
+    <Content Include="Nike\NikeEpicReactFlynit2.jpg" />
+    <Content Include="Nike\NikeEpicReactFlynit2Vast.jpg" />
+    <Content Include="Nike\NikeLegendReact2W_CoreBlack.jpg" />
+    <Content Include="Nike\NikeLegendReact2W_LightRedwood.jpg" />
+    <Content Include="Nike\NikeRevolution5.jpg" />
+    <Content Include="Nike\NikeRevolution5Midnight.jpg" />
+    <Content Include="Nike\NikeZoom2k.jpg" />
+    <Content Include="Nike\NikeZoom2KWhite.jpg" />
+    <Content Include="non\non1.jpg" />
+    <Content Include="non\non2.jpg" />
+    <Content Include="non\non3.jpg" />
+    <Content Include="non\non4.jpg" />
+    <Content Include="Page01.aspx" />
+    <Content Include="Page02.aspx" />
+    <Content Include="Page03.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Chitiet.aspx.cs">
+      <DependentUpon>Chitiet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Chitiet.aspx.designer.cs">
+      <DependentUpon>Chitiet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CreateForm.aspx.cs">
+      <DependentUpon>CreateForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CreateForm.aspx.designer.cs">
+      <DependentUpon>CreateForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HOME.aspx.cs">
+      <DependentUpon>HOME.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HOME.aspx.designer.cs">
+      <DependentUpon>HOME.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.aspx.cs">
+      <DependentUpon>LoginForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoginForm.aspx.designer.cs">
+      <DependentUpon>LoginForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage.Master.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage.Master.designer.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Page01.aspx.cs">
+      <DependentUpon>Page01.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Page01.aspx.designer.cs">
+      <DependentUpon>Page01.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Page02.aspx.cs">
+      <DependentUpon>Page02.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Page02.aspx.designer.cs">
+      <DependentUpon>Page02.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Page03.aspx.cs">
+      <DependentUpon>Page03.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Page03.aspx.designer.cs">
+      <DependentUpon>Page03.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MasterPage.Master" />
+    <None Include="packages.config" />
+    <Content Include="Web%28useforlist%29.sitemap" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <Content Include="Web.sitemap" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Anh3x4\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>62458</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44340/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
